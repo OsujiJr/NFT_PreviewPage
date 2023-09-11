@@ -1,0 +1,151 @@
+  @import url('https://fonts.googleapis.com/css2?family=Outfit');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+ --CYAN: hsl(178, 100%, 50%);
+ --SOFT-BLUE: hsl(178, 100%, 50%);
+
+ --CARD-BG: hsl(216, 50%, 16%);
+ --MAIN-BG: hsl(217, 54%, 11%);
+ --LINE: hsl(215, 32%, 27%);
+ --WHITE: hsl(0, 0%, 100%);
+
+ --FONT-SIZE: 20px;
+ --FONT: outfit;
+ --COLOR: hsl(215, 21%, 53%);
+}
+body{
+   display: flex;
+   flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--MAIN-BG);
+    align-items: center;
+    justify-content: center;
+    font-family: outfit ;
+}
+.main{
+    height: 690px;
+    width: 350px;
+    background-color: var(--CARD-BG);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-top: 7px;
+    margin: 0;
+}
+.image{
+    align-self: center;
+}
+.image .img{
+    border-radius: 30px;
+    padding: 1rem;
+}
+.equil{
+    padding: 1.3rem;
+    text-decoration: none;
+}
+.equil .link {
+    text-decoration: none;
+    color: var(--WHITE);
+}
+.equil .link:hover{
+    color: var(--CYAN); 
+}
+.para{
+    color: var(--COLOR);
+    padding: 1.08rem; 
+    font-size: var(--FONT-SIZE);
+}
+.price{
+    padding: 1.09rem;
+    display: flex;
+    color: white;
+}
+.price .eth{
+    color: var(--CYAN);
+    padding-right: 7rem;
+    font-weight: 400;
+    font-size: 19;
+}
+.price .eth-icon{
+    padding-top: 4px;
+    padding-right: 3px;
+    transform: scale(1.4);
+}
+.clock .icon {
+    padding-right: 5px;
+    transform: scale(1.4);
+    padding-top: 4px;
+}
+.line{
+    border-bottom: 2px solid var(--LINE);
+    display: inline-block;
+    margin: 1rem;
+}
+.creator {
+    display: flex;
+    padding: 1rem;
+}
+.creator .img-1{
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--WHITE);
+}
+.creator .Creation {
+    padding-left: 0.8rem;
+    align-self: center;
+    font-size: var(--FONT-SIZE);
+    color: var(--COLOR);
+}
+.creator .Jules{
+    align-self: center;
+    padding-left: 2px;
+    font-size: var(--FONT-SIZE);
+    color: var(--WHITE);
+    text-decoration: none;
+}
+.creator .Jules:hover{
+    color: var(--CYAN);
+    cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+    body{
+         display: flex;
+         flex-direction: column;
+         min-width: 100vw;
+         min-height: 100vh;
+         background-color: var(--MAIN-BG);
+         align-items: center;
+         justify-content: center;
+         font-family: outfit;
+        }
+        .main{
+        width: 80%;
+        height: 100%;
+        background-color: var(--CARD-BG);
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        padding-top: 7px;
+        margin: 0;
+    }
+    .image .img{
+        border-radius: 50px;
+        padding: 1rem;
+        width: 90%;
+  }
+  .para{
+    color: var(--COLOR);
+    padding: 1.08rem; 
+    font-size: var(--FONT-SIZE);
+    width: 90%;
+}
+.creator {
+    display: flex;
+    padding: 1rem;
+    width: 90%;
+}
+}
